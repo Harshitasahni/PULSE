@@ -258,5 +258,5 @@ The batch job will create folder with name active(N)_run(p), where N is the numb
 To plot throughput metrics on a graph run ```python plot_scaling.py --input_dir /path/to/output``` command. ```--input-dir``` provide the folder that contains sub-folders  active(N)_run(p). The file will plot only those ACTIVE_LEVELS for which data is avaiable. 
 
 ## 10. Acknowledgments :clap:
+We would like to acknowledge the resources provided by UNM CARC and ACCESS-CI grant CIS240709.
 
-This work was supported by [grant numbers / institutions]. Compute resources provided by [HPC center].
