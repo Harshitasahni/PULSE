@@ -26,8 +26,8 @@ set -euo pipefail
 # ---- paths ----
 BASE="../data_scaling_trajs/"                         # main folder: holds ALL 32 seeds + residues.txt + baseline
 SRC_SEEDS="$BASE/uncertain_seeds"
-OUT="/scratch/user/u.hs117810/integrating_insitu/test_scaling"                # where active_N_runM roots get created
-SCRIPT="/scratch/user/u.hs117810/new_ac/PULSE/src/scaling.py"
+OUT="../test_scaling"                # where active_N_runM roots get created
+SCRIPT="scaling.py"
 
 # ---- which active levels, and how many repeats each ----
 ACTIVE_LEVELS=(1 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32)
