@@ -229,7 +229,8 @@ To plot throughput metrics on a graph run ```python plot_scaling_gsm.py ``` comm
 ### 9.1 Requirements 
 
 For running scaling experiments for through and GSM coordination time, we require servers with below specifications: 
-- CPU server with at least 10 cores and 30GB of RAM. 
+- CPU server with at least 10 cores and 30GB of RAM.
+- Download the simulation data from [10.5281/zenodo.2194028](10.5281/zenodo.2194028) into the folder ```data_scaling_trajs```. 
 
 ### 9.2 Steps 
 We provide easy and ready batch job file [submit_scaling32.sh](src/submit_scaling32.sh), before submitting, make below changes:
