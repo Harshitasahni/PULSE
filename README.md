@@ -222,10 +222,9 @@ Each batch job for ACTIVE_LEVELS will create output folder with name active(N)_(
 
 ### 8.5 Plotting Graphs 
 
-To plot throughput metrics on a graph run ```python plot_scaling_gsm.py ``` command. Please note that 
+To plot throughput metrics on a graph run ```python plot_scaling_gsm.py ``` command. 
 
-
-## 9. Throughput Scaling  :chart_with_upwards_trend:
+## 9. Synthetic scaling with up to 32 concurrent trajectories :chart_with_upwards_trend:
 
 ### 9.1 Requirements 
 
@@ -233,16 +232,16 @@ For running scaling experiments for through and GSM coordination time, we requir
 - CPU server with at least 10 cores and 30GB of RAM. 
 
 ### 9.2 Steps 
-We provide easy and ready batch job file [submit_scaling.sh](src/submit_scaling.sh), before submitting, make below changes:
+We provide easy and ready batch job file [submit_scaling32.sh](src/submit_scaling32.sh), before submitting, make below changes:
 - Update/remove steps from line 13-21 for environment setup.  (use environment openmm as described in Section 3.1)
 - Change root directory on line #25
 - Change output directory on line #27
 - Change the ACTIVE_LEVELS variable from 1-32 (space separated) 
 - Change iterations on line #32
 
-Submit the batch job as: ```sbatch submit_scaling.sh``` 
+Submit the batch job as: ```sbatch submit_scaling32.sh``` 
 
-> Same batch job can be run directly if you are not using a scheudler like ```bash submit_scaling.sh```. 
+> Same batch job can be run directly if you are not using a scheudler like ```bash submit_scaling32.sh```. 
 
 ### 9.3 Inputs 
 
