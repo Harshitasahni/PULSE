@@ -101,8 +101,8 @@ conda activate pulse_analysis
 PULSE requires a short baseline simulation of the system being studied. Use any MD package; an example with OpenMM:
 
 ```bash
-python src/pulse/driver_baseline.py \
-    --pdb_dir baseline_data/protein_type \
+python src/driver_baseline.py \
+    --pdb_dir baseline_data/protein_type \ # example glob_water for beta-lactoglobulin
     --total_time_ns 200 \                  #time for simulation
     --output_dir baseline_results_protein_type/
 ```
@@ -110,7 +110,7 @@ python src/pulse/driver_baseline.py \
 ### 4.2 Run PULSE adaptive sampling
 
 ```bash
-python src/pulse/driver_uncertain.py \
+python src/driver_uncertain.py \
     --root baseline_results_protein_type/ \
     --total_ns 100 \
     --active 2 \
@@ -202,13 +202,13 @@ For running these experiments to capture GSM coordination time, we used TAMU Ace
 > Please note above requirements are needed to complete reproduction. Using a different GPU version with memory size may provide deviations in performance metrics. More details of our system are available [here](https://hprc.tamu.edu/kb/User-Guides/ACES/Hardware/), refer Sapphire Rapids Nodes. 
 
 ### 8.2 Steps 
-We provide easy and ready batch job file [submit_pulse_gsm_scaling.sh](src/submit_scaling.sh), before submitting, make below changes:
+We provide easy and ready batch job file [submit_pulse_metrics.sh](src/submit_pulse_metrics.sh), before submitting, make below changes:
 - Update/remove steps from line 21-30 for environment setup. (use environment openmm as described in Section 3.1)
 - Change the ACTIVE_LEVELS variable from 1-8 (space separated) 
 
 It shall take 100-150 minutes for each entry in ACTIVE_LEVELS to complete. 
 
-Submit the batch job as: ```sbatch submit_pulse_gsm_scaling.sh``` 
+Submit the batch job as: ```sbatch submit_pulse_metrics.sh``` 
 > Same batch job can be run directly if you are not using a scheudler like ```bash submit_pulse_gsm_scaling.sh```. 
 
 ### 8.3 Inputs 
