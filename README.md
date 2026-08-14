@@ -35,6 +35,8 @@ PULSE/
 │   ├── count_latest_glob
 │   ├── om_REAP_glob1
 │   ├── traj.npy
+├── data_scaling_trajs # simulation data for 32 trajectories 
+
 
 
 
@@ -45,6 +47,7 @@ PULSE/
 We provide all the sample input data needed in the below DOI. We request you to pay close attention to this section as this is critical step. 
 - Download the data into the PULSE directory your final directory structure should look like above.
 - We provide datasets and neccessary files in zenodo DOI: [10.5281/zenodo.21815948](https://zenodo.org/records/21815948)
+- We also provide simulation data for 32 trajectory files that shall be required in Section 9 in zenodo DOI: 10.5281/zenodo.21940283
 - 4 .dcd files in the root level of the DOI each of ~2.2GB are pre-simulated baselines trajectory co-ordinates
 - The dataset also includes 4 zip files that contain pre-simulated trajectories along with their windows in .dcd extension for 4 methods that are used of comparison.
 - Unzip the files in the parent folder (PULSE) 
