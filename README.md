@@ -47,7 +47,7 @@ PULSE/
 We provide all the sample input data needed in the below DOI. We request you to pay close attention to this section as this is critical step. 
 - Download the data into the PULSE directory your final directory structure should look like above.
 - We provide datasets and neccessary files in zenodo DOI: [10.5281/zenodo.21815948](https://zenodo.org/records/21815948)
-- We also provide simulation data for 32 trajectory files that shall be required in Section 9 in zenodo DOI: 10.5281/zenodo.21940283
+- We also provide simulation data for 32 trajectory files that shall be required in Section 9 in zenodo DOI: [10.5281/zenodo.21940283](https://zenodo.org/records/21940283)
 - 4 .dcd files in the root level of the DOI each of ~2.2GB are pre-simulated baselines trajectory co-ordinates
 - The dataset also includes 4 zip files that contain pre-simulated trajectories along with their windows in .dcd extension for 4 methods that are used of comparison.
 - Unzip the files in the parent folder (PULSE) 
@@ -233,7 +233,7 @@ To plot throughput metrics on a graph run ```python plot_scaling_gsm.py ``` comm
 
 For running scaling experiments for through and GSM coordination time, we require servers with below specifications: 
 - CPU server with at least 10 cores and 30GB of RAM.
-- Download the simulation data from Zenodo DOI: "10.5281/zenodo.2194028" into the folder ```data_scaling_trajs```. 
+- Download the simulation data from Zenodo DOI: "[10.5281/zenodo.2194028](https://zenodo.org/records/21940283)" into the folder ```data_scaling_trajs```. 
 
 ### 9.2 Steps 
 We provide easy and ready batch job file [submit_scaling32.sh](src/submit_scaling32.sh), before submitting, make below changes:
